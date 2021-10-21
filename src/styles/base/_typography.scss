@@ -1,0 +1,35 @@
+body {
+  font-family: 'Inconsolata', monospace;
+  // font-family: "Ropa Sans", sans-serif;
+  font-weight: 400;
+  // line-height: 2.1rem;
+  font-size: 1.6rem;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p,
+ul,
+h3,
+h1,
+h2 {
+  font-family: inherit;
+  color: var(--color-text);
+  // line-height: 1.5;
+  // margin-bottom: 1.45rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+}

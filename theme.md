@@ -1,0 +1,21 @@
+# Colors
+
+#FFFFFF
+#2E4057
+#6F9CEB
+#DA4167
+#F4D35E
+
+## Dark Bg Shadow
+
+#263652
+#32476B
+#385078
+#567AB8
+#74A4F7
+
+## Light Bg Shadow
+
+#D4D4D4
+#EEEEEE
+#FFFFFF
