@@ -4137,6 +4137,13 @@ find-versions@^3.0.0:
   dependencies:
     semver-regex "^2.0.0"
 
+flat@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/flat/-/flat-4.1.1.tgz#a392059cc382881ff98642f5da4dde0a959f309b"
+  integrity sha512-FmTtBsHskrU6FJ2VxCnsDb84wu9zhmO3cUX2kGFb5tuwhfXxGciiT0oRY+cck35QmG+NmGh5eLz6lLCpWTqwpA==
+  dependencies:
+    is-buffer "~2.0.3"
+
 flush-write-stream@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/flush-write-stream/-/flush-write-stream-1.1.1.tgz#8dd7d873a1babc207d94ead0c2e0e44276ebf2e8"
@@ -4634,6 +4641,15 @@ gridsome-plugin-typescript@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-typescript/-/gridsome-plugin-typescript-0.4.0.tgz#d6037275bfc1a92844d704c3f67b685478d6351d"
   integrity sha512-2tq2vPT/aqKmbSjlLeakRaaXrifgTIHzuwaHqapMx1PnZmviy9jdqoqbn533b4RcWYDbZ8gQ9gixjmT+RY5Ilg==
+
+gridsome-transformer-netlify@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/gridsome-transformer-netlify/-/gridsome-transformer-netlify-1.0.3.tgz#4e7c8511ea4da6aa874b4e2b18bf3cefe6aea2bb"
+  integrity sha512-8WrBT0vG262JfUW1AmMWV+RG46/b2lrChubWQpyBJG5FIFhxgmuJCAaKm2nETICiv3xO/ReJ9UONeBiQ7yW/Yw==
+  dependencies:
+    flat "^4.1.0"
+    js-yaml "^3.13.1"
+    marked "^0.7.0"
 
 gridsome@^0.7.0:
   version "0.7.23"
@@ -5335,7 +5351,7 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-buffer@^2.0.0:
+is-buffer@^2.0.0, is-buffer@~2.0.3:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.5.tgz#ebc252e400d22ff8d77fa09888821a24a658c191"
   integrity sha512-i2R6zNFDwgEHJyQUtJEk0XFi1i0dPFn/oqjK3/vPCcDeJvW5NQ83V8QbicfF1SupOaB0h8ntgBC2YiE7dfyctQ==
@@ -6181,6 +6197,11 @@ markdown-escapes@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.4.tgz#c95415ef451499d7602b91095f3c8e8975f78535"
   integrity sha512-8z4efJYk43E0upd0NbVXwgSTQs6cT3T06etieCMEg7dRbzCbxUCK/GHlX8mhHRDcp+OLlHkPKsvqQTCvsRl2cg==
+
+marked@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.7.0.tgz#b64201f051d271b1edc10a04d1ae9b74bb8e5c0e"
+  integrity sha512-c+yYdCZJQrsRjTPhUx7VKkApw9bwDkNbHUKo1ovgcfDjb2kc8rLuRbIFyXL5WOEUwzSSKo3IXpph2K6DqB/KZg==
 
 marky@^1.2.1:
   version "1.2.2"

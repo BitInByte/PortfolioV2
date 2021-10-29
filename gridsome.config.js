@@ -63,7 +63,7 @@ module.exports = {
         typeName: 'Content',
         sourceField: 'remoteImage',
         targetField: 'image',
-        targetPath: '@/src/assets/images',
+        targetPath: './src/assets/images',
         // cache: false,
       },
     },
@@ -73,7 +73,7 @@ module.exports = {
         typeName: 'Project',
         sourceField: 'remoteImage',
         targetField: 'image',
-        targetPath: '@/src/assets/images',
+        targetPath: './src/assets/images',
       },
     },
     {
@@ -83,12 +83,19 @@ module.exports = {
         path: 'git-source/projects/*.md', // Or specify a specific filetype, like *.jpg
       },
     },
+    {
+      use: 'gridsome-transformer-netlify',
+      options: {
+        imageKey: 'image', // default value (optional)
+        markdownKey: 'body', // default value (optional)
+      },
+    },
   ],
   templates: {
     Project: [
       {
         path: '/project/:id',
-        component: '@/src/templates/Project.vue',
+        component: './src/templates/Project.vue',
       },
     ],
   },
