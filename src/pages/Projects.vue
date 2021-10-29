@@ -19,9 +19,7 @@ query {
     edges {
       node {
         id
-        image {
-            type
-        }
+        image
         title
         content
       }
