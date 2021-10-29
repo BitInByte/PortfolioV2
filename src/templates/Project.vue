@@ -33,7 +33,7 @@
 <page-query>
 query ($path: String!) {
     project: project(path: $path) {
-        image
+        remoteImage
         title
         content
         stack

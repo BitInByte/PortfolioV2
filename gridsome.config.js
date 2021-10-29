@@ -62,7 +62,7 @@ module.exports = {
       options: {
         typeName: 'Content',
         sourceField: 'remoteImage',
-        targetField: 'image',
+        targetField: 'remoteImage',
         targetPath: './src/assets/images',
         cache: false,
       },
@@ -72,7 +72,7 @@ module.exports = {
       options: {
         typeName: 'Project',
         sourceField: 'remoteImage',
-        targetField: 'image',
+        targetField: 'remoteImage',
         targetPath: './src/assets/images',
       },
     },

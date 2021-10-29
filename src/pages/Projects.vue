@@ -19,7 +19,7 @@ query {
     edges {
       node {
         id
-        image
+        remoteImage
         title
         content
       }
