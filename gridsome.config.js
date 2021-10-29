@@ -58,6 +58,20 @@ module.exports = {
     // },
     // },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Project',
+        path: 'git-source/projects/*.md', // Or specify a specific filetype, like *.jpg
+      },
+    },
+    {
+      use: 'gridsome-transformer-netlify',
+      options: {
+        imageKey: 'image', // default value (optional)
+        markdownKey: 'body', // default value (optional)
+      },
+    },
+    {
       use: '@noxify/gridsome-plugin-remote-image',
       options: {
         typeName: 'Content',
@@ -74,20 +88,6 @@ module.exports = {
         sourceField: 'remoteImage',
         targetField: 'image',
         targetPath: './src/assets/images',
-      },
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Project',
-        path: 'git-source/projects/*.md', // Or specify a specific filetype, like *.jpg
-      },
-    },
-    {
-      use: 'gridsome-transformer-netlify',
-      options: {
-        imageKey: 'image', // default value (optional)
-        markdownKey: 'body', // default value (optional)
       },
     },
   ],
