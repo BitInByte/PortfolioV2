@@ -20,10 +20,10 @@ export default Vue.extend({
       isChecked: false,
     };
   },
-  created: function() {
+  mounted: function() {
     const isDark: string | null = localStorage.getItem('theme');
     console.log('firing it', isDark);
-    if (isDark && isDark === 'dark') {
+    if (isDark !== null && isDark === 'dark') {
       console.log('isDark');
       this.isChecked = true;
       this.doDark();
