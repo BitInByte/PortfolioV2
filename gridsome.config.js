@@ -77,7 +77,7 @@ module.exports = {
         typeName: 'Content',
         sourceField: 'remoteImage',
         targetField: 'image',
-        targetPath: './src/assets/images',
+        targetPath: `${__dirname}/src/assets/images`,
         // cache: false,
       },
     },
@@ -87,7 +87,7 @@ module.exports = {
         typeName: 'Project',
         sourceField: 'remoteImage',
         targetField: 'image',
-        targetPath: './src/assets/images',
+        targetPath: `${__dirname}/src/assets/images`,
       },
     },
   ],
@@ -95,7 +95,7 @@ module.exports = {
     Project: [
       {
         path: '/project/:id',
-        component: './src/templates/Project.vue',
+        component: `${__dirname}/src/templates/Project.vue`,
       },
     ],
   },
