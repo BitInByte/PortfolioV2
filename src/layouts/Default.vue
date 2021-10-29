@@ -98,7 +98,7 @@ export default Vue.extend({
   position: relative;
 
   @include respond(large) {
-    width: 192rem;
+    width: 190rem;
   }
 }
 
