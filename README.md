@@ -1,14 +1,37 @@
-# Default starter for Gridsome
+# My Typescript Portfolio
 
-This is the project you get when you run `gridsome create new-project`.
+## [Check it here](https://www.jopecodes.dev/)
 
-### 1. Install Gridsome CLI tool if you don't have
+![Thumbnail](thumbnail.png)
+My Portfolio page
 
-`npm install --global @gridsome/cli`
+## Getting Started
 
-### 2. Create a Gridsome project
+Built with Gridsome and what an awesome framework. Also, it was built with a lot of animations so that it can be more interactive
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## Specifications
+
+I've always wanted to create an interactive website with a couple of animations. This was one experience of it.
+
+## Built With
+
+- Vue
+- Gridsome
+- SASS
+- GRAPHQL
+- Typescript
+
+## Contributing
+
+Feel free to download it and improve it. If you want just give a pull request with your changes and let me know what can be improved. Many thanks :D
+
+## Pages
+
+- [GitHub Page](https://github.com/BitInByte)
+- [Instagram](https://www.instagram.com/bitinbyte/)
+- [Twitter](https://twitter.com/BitInByte2)
+
+## Authors
+
+**BitInByte** - Development student and tech enthusiastic
+e

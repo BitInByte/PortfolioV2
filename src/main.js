@@ -56,6 +56,49 @@ export default function(Vue, { router, head, isClient }) {
       'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap',
   });
 
+  head.meta.push({
+    name: 'description',
+    content:
+      'Hello, my name is Joao Pedro and I am a Web Developer aspiring to be full-stack and software developer!',
+  });
+
+  head.meta.push({
+    name: 'og:description',
+    content:
+      'Hello, my name is Joao Pedro and I am a Web Developer aspiring to be full-stack and software developer!',
+  });
+
+  head.meta.push({
+    name: 'og:title',
+    content: 'JoPeCodes',
+  });
+
+  head.meta.push({
+    name: 'og:type',
+    content: 'website',
+  });
+
+  head.meta.push({
+    name: 'twitter:card',
+    content: 'summary',
+  });
+
+  head.meta.push({
+    name: 'twitter:creator',
+    content: 'João Pedro',
+  });
+
+  head.meta.push({
+    name: 'twitter:title',
+    content: 'JoPeCodes',
+  });
+
+  head.meta.push({
+    name: 'twitter:description',
+    content:
+      'Hello, my name is Joao Pedro and I am a Web Developer aspiring to be full-stack and software developer!',
+  });
+
   Vue.component('font-awesome', FontAwesomeIcon);
 
   // Set default layout as a global component

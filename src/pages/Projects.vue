@@ -15,7 +15,7 @@
 
 <page-query>
 query {
-  projects: allProject {
+  projects: allProject(sortBy: "projectNr", order: DESC) {
     edges {
       node {
         id

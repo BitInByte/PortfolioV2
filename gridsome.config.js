@@ -20,6 +20,8 @@ function addStyleResource(rule) {
 
 module.exports = {
   siteName: 'JoPeCodes',
+  siteDescription:
+    'Hello, my name is Joao Pedro and I am a Web Developer aspiring to be full-stack and software developer!',
   // transformers: {
   // remark: {
   // externalLinksTarget: '_blank',

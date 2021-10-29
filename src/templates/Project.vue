@@ -14,7 +14,9 @@
       </a>
     </div>
     <div class="image">
-      <g-image :src="$page.project.image"></g-image>
+      <a :href="$page.project.liveLink" target="_blank">
+        <g-image :src="$page.project.image"></g-image>
+      </a>
     </div>
     <!-- <h3>Stack</h3> -->
     <ul>
@@ -36,6 +38,7 @@ query ($path: String!) {
         content
         stack
         sourceLink
+        liveLink
   }
 }
 </page-query>
