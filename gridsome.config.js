@@ -64,7 +64,7 @@ module.exports = {
         sourceField: 'remoteImage',
         targetField: 'image',
         targetPath: './src/assets/images',
-        cache: false,
+        // cache: false,
       },
     },
     {
