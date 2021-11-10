@@ -44,40 +44,34 @@ module.exports = {
         target: 'git-source',
         typeName: 'Content',
         pattern: `**/*.md`,
+        cache: false,
       },
     },
-    // {
-    // use: '@noxify/gridsome-source-git',
-    // options: {
-    // name: 'Project',
-    // remote: 'https://github.com/BitInByte/portfolio-content.git',
-    // target: 'test',
-    // typeName: 'Projects',
-    // pattern: `**/*.md`,
-    // // route: '/project/:id',
-    // },
-    // },
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Project',
         path: 'git-source/projects/*.md', // Or specify a specific filetype, like *.jpg
+        // remark: {
+        // plugins: ['remark-images'],
+        // },
       },
     },
-    {
-      use: 'gridsome-transformer-netlify',
-      options: {
-        imageKey: 'image', // default value (optional)
-        markdownKey: 'body', // default value (optional)
-      },
-    },
+    // {
+    // use: 'gridsome-transformer-netlify',
+    // options: {
+    // imageKey: 'image', // default value (optional)
+    // markdownKey: 'body', // default value (optional)
+    // },
+    // },
     {
       use: '@noxify/gridsome-plugin-remote-image',
       options: {
         typeName: 'Content',
         sourceField: 'remoteImage',
-        targetField: 'image',
-        targetPath: `${__dirname}/src/assets/images`,
+        targetField: 'amazingImage',
+        targetPath: `./src/assets/images`,
+        schemaType: 'url',
         // cache: false,
       },
     },
@@ -87,7 +81,8 @@ module.exports = {
         typeName: 'Project',
         sourceField: 'remoteImage',
         targetField: 'image',
-        targetPath: `${__dirname}/src/assets/images`,
+        targetPath: `./src/assets/images`,
+        schemaType: 'url',
       },
     },
   ],
@@ -95,7 +90,7 @@ module.exports = {
     Project: [
       {
         path: '/project/:id',
-        component: `${__dirname}/src/templates/Project.vue`,
+        component: `./src/templates/Project.vue`,
       },
     ],
   },

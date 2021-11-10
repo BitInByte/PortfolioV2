@@ -1,7 +1,5 @@
 <template>
   <section>
-    <!-- <h2>{{ $page.aboutMe.title }}</h2> -->
-    <!-- <div v-html="$page.aboutMe.content"></div> -->
     <app-content-injector
       :content="$page.aboutMe.content"
     ></app-content-injector>
@@ -20,13 +18,10 @@ query {
 <script>
 import AppContentInjector from '~/components/AppContentInjector.vue';
 export default {
-  components: { AppContentInjector },
   metaInfo: {
-    //title: this.$page.aboutMe.title,
+    title: 'About Me',
   },
-  mounted() {
-    console.log('Page', this.$page);
-  },
+  components: { AppContentInjector },
 };
 </script>
 
@@ -42,7 +37,7 @@ section {
   padding: 3rem 3rem;
 
   @include respond(mid) {
-    padding: 3rem 0.5rem;
+    padding: 3rem 1.5rem;
   }
 }
 </style>

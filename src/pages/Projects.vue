@@ -29,11 +29,7 @@ query {
 </page-query>
 
 <script>
-export default {
-  mounted() {
-    console.log('Projects: ', this.$page.projects);
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

@@ -49,9 +49,6 @@ query ($path: String!) {
 import AppContentInjector from '~/components/AppContentInjector.vue';
 export default {
   components: { AppContentInjector },
-  mounted() {
-    console.log('Project: ', this.$page.project);
-  },
 };
 </script>
 
@@ -128,7 +125,8 @@ section {
 
   & h2 {
     color: var(--color-primary);
-    line-height: 1.3;
+    //line-height: 1.3;
+    line-height: 1;
     text-align: center;
     margin-bottom: 2rem;
   }

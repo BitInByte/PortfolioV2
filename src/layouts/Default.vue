@@ -1,5 +1,4 @@
 <template>
-  <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
   <div>
     <div class="user-action" @click="toggleHeader">
       <font-awesome :icon="['fas', 'user']"></font-awesome>
@@ -17,10 +16,6 @@
       ></the-header>
     </transition>
     <the-header :isShow="false"></the-header>
-    <!-- <header :class="{ show: isHeaderOpen }"> -->
-    <!-- <div class="author"></div> -->
-    <!-- <div class="bio-content"></div> -->
-    <!-- </header> -->
     <main>
       <slot></slot>
     </main>
@@ -78,7 +73,6 @@ export default Vue.extend({
   mounted() {},
   methods: {
     toggleHeader(): void {
-      console.log('toggled');
       this.isHeaderOpen = !this.isHeaderOpen;
     },
   },
@@ -181,12 +175,22 @@ footer {
         &:not(:last-child) {
           &::after {
             content: '';
+            //margin: 0.5rem 0;
             margin-top: 0.5rem;
+            // Only Safari
+            @media not all and (min-resolution: 0.001dpcm) {
+              @supports (-webkit-appearance: none) {
+                margin-bottom: 1rem;
+              }
+            }
             border-bottom: 0.01rem solid var(--color-text);
           }
         }
 
         &:hover > a {
+          color: var(--color-primary);
+        }
+        & .active--exact {
           color: var(--color-primary);
         }
 

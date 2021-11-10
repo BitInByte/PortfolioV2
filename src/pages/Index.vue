@@ -11,7 +11,7 @@
           'electronic enthusiastic',
           'eSports lover',
         ]"
-        :typingSpeed="100"
+        :typingSpeed="40"
       ></the-typewriter-effect>
     </p>
   </section>
@@ -19,7 +19,6 @@
 
 <script lang="ts">
 import TheTypewriterEffect from '~/components/TheTypewriterEffect.vue';
-// @ts-ignore
 export default {
   metaInfo: {
     title: 'Home',

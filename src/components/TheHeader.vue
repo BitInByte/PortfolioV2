@@ -1,6 +1,5 @@
 <template>
   <header :class="{ show: isShow }" id="header-content" ref="header">
-    <!-- <header> -->
     <div class="author" ref="author">
       <g-image src="~/assets/images/me.jpeg"></g-image>
       <p class="signature">João Pedro</p>
@@ -43,35 +42,6 @@
       <app-content-injector
         :content="$static.stack.content"
       ></app-content-injector>
-      <!-- <h3> -->
-      <!-- Languages -->
-      <!-- </h3> -->
-      <!-- <ul> -->
-      <!-- <li v-for="language in languages" :key="language"> -->
-      <!-- [> <g-image :src="language.img"></g-image> <] -->
-      <!-- {{ language }} -->
-      <!-- </li> -->
-      <!-- </ul> -->
-      <!-- <hr /> -->
-      <!-- <h3> -->
-      <!-- Technologies & Frameworks -->
-      <!-- </h3> -->
-      <!-- <ul> -->
-      <!-- <li v-for="technology in technologies" :key="technology"> -->
-      <!-- [> <g-image :src="language.img"></g-image> <] -->
-      <!-- {{ technology }} -->
-      <!-- </li> -->
-      <!-- </ul> -->
-      <!-- <hr /> -->
-      <!-- <h3> -->
-      <!-- Uses -->
-      <!-- </h3> -->
-      <!-- <ul> -->
-      <!-- <li v-for="use in uses" :key="use"> -->
-      <!-- [> <g-image :src="language.img"></g-image> <] -->
-      <!-- {{ use }} -->
-      <!-- </li> -->
-      <!-- </ul> -->
     </div>
   </header>
 </template>
@@ -108,47 +78,11 @@ export default Vue.extend({
     const totalHeaderHeight = (this.$refs.header as HTMLDivElement)
       .clientHeight;
     const authorHeight = (this.$refs.author as HTMLDivElement).clientHeight;
-    // @ts-ignore
-    console.log('Content', this.$static.stack.content);
-    //const totalHeaderHeight = document.getElementById('header-content')?.clientHeight;
-    //const authorHeight = document.getElementsByClassName('author')[0]?.clientHeight;
-    //const bio = document.getElementsByClassName('bio-content')[0] as HTMLDivElement;
     const bio = this.$refs.bio as HTMLDivElement;
     if (totalHeaderHeight && authorHeight && bio) {
       const remainingHeight = totalHeaderHeight - authorHeight;
       bio.style.height = remainingHeight + 'px';
     }
-  },
-  computed: {
-    languages(): string[] {
-      return [
-        'Java',
-        'Typescript',
-        'Javascript',
-        'Dart',
-        'Python',
-        'SQL',
-        'NOSQL',
-        'LaTeX',
-      ];
-    },
-    technologies(): string[] {
-      return [
-        'Angular',
-        'Vue',
-        'React',
-        'Spring',
-        'PostgreSQL',
-        'MongoDB',
-        'Flutter',
-        'React Native',
-        'RxJS',
-        'Redux',
-      ];
-    },
-    uses(): string[] {
-      return ['neovim', 'github', 'postman', 'netlify', 'zsh'];
-    },
   },
 });
 </script>
